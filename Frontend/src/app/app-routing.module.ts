@@ -12,6 +12,7 @@ import { CreatePedidoComponent } from './crudPedidos/create-pedido.component';
 import { UpdatePedidoComponent } from './crudPedidos/update-pedido.component';
 import { AllPedidoComponent } from './crudPedidos/all-pedido.component';
 import { FindByIdPedidoComponent } from './crudPedidos/find-by-id-pedido.component';
+import { CalcularValorPagarComponent } from './crudPedidos/calcular-valor-pagar/calcular-valor-pagar.component';
 
 // Define las rutas de la aplicación, asociando cada ruta con su respectivo componente
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'updatePedido/:id', component: UpdatePedidoComponent },
   { path: 'allPedido', component: AllPedidoComponent },
   { path: 'findIdPedido/:id', component: FindByIdPedidoComponent },
+  { path: 'calcular-valor-pagar', component: CalcularValorPagarComponent }, // Nueva ruta añadida
   { path: 'menu', component: MenuComponent }, // Ruta para el menú principal
 
   // Agrega la ruta para la página de login
@@ -47,3 +49,4 @@ const routes: Routes = [
   exports: [RouterModule] // Exporta RouterModule para que esté disponible en toda la aplicación
 })
 export class AppRoutingModule { }
+

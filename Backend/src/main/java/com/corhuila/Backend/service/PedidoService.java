@@ -30,6 +30,15 @@ public class PedidoService {
 
     // Método para guardar o actualizar un pedido en la base de datos utilizando el método save del repositorio
     public Pedido savePedido(Pedido pedido) {
+        // Verifica que el pedido tenga un producto y una cantidad válida
+        if (pedido.getProducto() != null && pedido.getCantidad() > 0) {
+            // Calcula el total a pagar multiplicando la cantidad por el precio del producto
+            pedido.setTotalPagar(pedido.getCantidad() * pedido.getProducto().getPrecio());
+        } else {
+            // Si no es válido, se establece el total a pagar como 0
+            pedido.setTotalPagar(0.0);
+        }
+        // Guarda el pedido en la base de datos
         return pedidoRepository.save(pedido);
     }
 
@@ -38,3 +47,4 @@ public class PedidoService {
         pedidoRepository.deleteById(id);
     }
 }
+

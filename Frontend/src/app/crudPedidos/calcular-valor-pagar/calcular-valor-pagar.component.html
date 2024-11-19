@@ -1,0 +1,39 @@
+<ion-header color="primary">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Calcular Valor a Pagar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ingrese los Detalles del Pedido</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <!-- Cantidad -->
+      <ion-item>
+        <ion-label position="floating">Cantidad</ion-label>
+        <ion-input type="number" [(ngModel)]="cantidad"></ion-input>
+      </ion-item>
+
+      <!-- Producto -->
+      <ion-item>
+        <ion-label>Producto</ion-label>
+        <ion-select [(ngModel)]="producto" placeholder="Seleccionar producto">
+          <ion-select-option *ngFor="let p of productos" [value]="p">
+            {{ p.nombre }} - ${{ p.precio }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Botón Calcular -->
+      <ion-button expand="block" color="success" (click)="calcularValor()">Calcular</ion-button>
+
+      <!-- Total a Pagar -->
+      <ion-item *ngIf="valor">
+        <ion-label>Total a Pagar:</ion-label>
+        <ion-text>${{ valor }}</ion-text>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
