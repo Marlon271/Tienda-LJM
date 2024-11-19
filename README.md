@@ -17,6 +17,7 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 **Tecnologías utilizadas:**  
 - **Backend:** Spring Boot con Java.  
 - **Frontend:** Ionic con Angular.  
+- **Base de Datos:** MySQL.  
 
 ---
 
@@ -33,7 +34,6 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 - **Implementación de rutas API:** Proporciona endpoints para la interacción entre el frontend y la base de datos.
 
 ---
-
 
 ---
 
@@ -65,12 +65,12 @@ El diseño MER incluye las tablas necesarias para la gestión de productos y ped
 
 ## Configuración de la Base de Datos
 
-**Base de datos utilizada:** PostgreSQL  
+**Base de datos utilizada:** MySQL  
 
 **Pasos para la configuración:**
-1. Importar el esquema de la base de datos en pgAdmin 4.  
-2. Configurar el contenedor Docker para ejecutar PostgreSQL y pgAdmin.  
-3. Verificar que las tablas estén correctamente implementadas.
+1. Instalar **MySQL** en el sistema (puedes usar **XAMPP** o **MySQL Workbench**).  
+2. Importar el esquema de la base de datos en MySQL Workbench.  
+3. Verificar que las tablas estén correctamente implementadas ejecutando el script proporcionado.
 
 **Estructura de las Tablas:**
 
@@ -95,15 +95,19 @@ El diseño MER incluye las tablas necesarias para la gestión de productos y ped
 ## Script de Base de Datos
 
 ```sql
+CREATE DATABASE TiendaLJM;
+
+USE TiendaLJM;
+
 CREATE TABLE productos (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     precio DECIMAL(10, 2) NOT NULL,
     categoria VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE pedidos (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     usuarioId INT NOT NULL,
     total DECIMAL(10, 2) NOT NULL,
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -113,6 +117,13 @@ CREATE TABLE pedidos (
 
 ---
 
+## Descarga de Recursos
+
+- **Aplicación móvil:** [Descargar APK](sandbox:/mnt/data/app-debug.apk)  
+- **Presentación PowerPoint:** [Descargar presentación](sandbox:/mnt/data/proyecto.pptx)
+
+---
+
 ## Resultado
 
-La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva, optimizando tanto el backend como el frontend para un rendimiento y experiencia de usuario excepcionales.
+La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria.
