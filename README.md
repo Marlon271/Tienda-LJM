@@ -10,7 +10,7 @@
 
 ## Enlace del Video Explicativo del nuevo componente de Marlon David Romero Trujillo
 
-Puedes ver el video explicativo sobre cómo se creó e integró cada componente en el siguiente enlace:
+Puedes ver el video explicativo del nuevo componente en el siguiente enlace:
 - **[Enlace al Video](https://drive.google.com/file/d/1qyh7fHij1Y3HB8aUI3auktMp3yIPA9Uj/view?usp=sharing)**
 
 ---
