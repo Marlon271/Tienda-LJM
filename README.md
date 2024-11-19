@@ -36,14 +36,6 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 
 ---
 
-## Asignación de Roles
-
-| **Integrante**                  | **Función**                                |
-|---------------------------------|--------------------------------------------|
-| Romero Trujillo Marlos David    | Desarrollo de backend y base de datos.     |
-| Trujillo Bonilla Julián Alberto | Diseño y desarrollo del frontend.          |
-| Vargas Herrera José Leonardo    | Integración de API y manejo de vistas.     |
-
 ---
 
 ## Modelo Entidad Relación (MER)
@@ -130,7 +122,7 @@ CREATE TABLE pedidos (
 
 - **Aplicación móvil:**  
   Generada con **Ionic** para dispositivos Android. Puedes descargarla y abrirla desde tu dispositivo móvil:  
-  [Descargar APK]!(app-debug.apk).  
+  [Descargar APK](app-debug.apk).  
 
   > Si estás navegando desde tu dispositivo móvil, haz clic en el enlace para iniciar la descarga y luego abre el archivo para instalar la aplicación.  
 
