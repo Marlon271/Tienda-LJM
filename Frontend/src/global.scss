@@ -1,0 +1,126 @@
+/*
+ * CSS Global de la Aplicación
+ * ----------------------------------------------------------------------------
+ * Reglas de estilo globales para mejorar la apariencia y funcionalidad en dispositivos móviles.
+ */
+
+/* CSS esencial requerido para que los componentes de Ionic funcionen correctamente */
+@import "@ionic/angular/css/core.css";
+
+/* CSS básico para aplicaciones construidas con Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Utilidades CSS opcionales que pueden ser comentadas */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Modo Oscuro de Ionic
+ * -----------------------------------------------------
+ * Se puede activar o desactivar según el sistema.
+ */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Estilos generales para toda la aplicación */
+body {
+  font-family: "Arial", sans-serif; /* Fuente predeterminada */
+  background-color: #f8f9fa; /* Fondo gris claro */
+  color: #212529; /* Color del texto principal */
+}
+
+/* Estilos globales para encabezados */
+ion-header {
+  --background: #3f51b5; /* Fondo azul para encabezados */
+  --color: #ffffff; /* Texto blanco */
+}
+
+/* Contenedor principal de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Altura completa */
+  background: linear-gradient(to bottom, #3f51b5, #5a67d8); /* Gradiente en el fondo */
+  color: #fff;
+}
+
+/* Estilos para la tarjeta de login */
+.login-card {
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+  padding: 40px;
+  border-radius: 10px; /* Bordes ligeramente redondeados */
+  width: 90%;
+  max-width: 400px; /* Limitar ancho máximo */
+  text-align: center; /* Centrar texto */
+}
+
+/* Encabezado del formulario */
+.login-card-header {
+  margin-bottom: 20px;
+}
+
+.login-card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f51b5; /* Texto azul */
+}
+
+/* Estilos para inputs */
+ion-input {
+  width: 100%;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+ion-button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+  --background: #3f51b5; /* Fondo azul */
+  --background-activated: #303f9f; /* Fondo activado más oscuro */
+  --color: #ffffff; /* Texto blanco */
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #adb5bd; /* Texto gris claro */
+}
+
+footer a {
+  text-decoration: none;
+  color: #3f51b5; /* Azul */
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ajustes específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 20px;
+  }
+
+  ion-input {
+    font-size: 14px;
+  }
+}
+
+

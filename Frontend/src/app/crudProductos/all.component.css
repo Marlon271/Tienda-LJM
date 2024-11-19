@@ -1,0 +1,93 @@
+/* Estilos para el encabezado de la página */
+ion-header {
+  --background: #3880ff; /* Color de fondo del encabezado */
+  --color: #fff; /* Color del texto del encabezado */
+}
+
+/* Estilos para el título dentro del encabezado */
+ion-title {
+  text-align: center; /* Alineación del texto del título al centro */
+}
+
+/* Estilos para el contenido principal de la página */
+ion-content {
+  --background: #f0f0f0; /* Color de fondo del contenido */
+  padding: 15px; /* Espaciado interno del contenido */
+}
+
+/* Estilos para el botón de crear receta */
+.crear-receta-btn {
+  margin-bottom: 20px; /* Margen inferior del botón */
+}
+
+/* Estilos para la tabla responsiva */
+.responsive-table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  border-collapse: collapse; /* Colapsar los bordes de la tabla */
+  margin-bottom: 20px; /* Margen inferior de la tabla */
+}
+
+/* Estilos comunes para los encabezados y celdas de la tabla */
+.responsive-table th, .responsive-table td {
+  border: 1px solid #ddd; /* Borde de las celdas y encabezados */
+  padding: 8px; /* Espaciado interno de las celdas y encabezados */
+}
+
+/* Estilos específicos para los encabezados de la tabla */
+.responsive-table th {
+  background-color: #3880ff; /* Color de fondo de los encabezados */
+  color: white; /* Color del texto de los encabezados */
+  text-align: left; /* Alineación del texto de los encabezados a la izquierda */
+}
+
+/* Estilos para las filas pares de la tabla */
+.responsive-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo para las filas pares */
+}
+
+/* Estilos para las filas al pasar el cursor */
+.responsive-table tr:hover {
+  background-color: #ddd; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para los botones dentro de las celdas de la tabla */
+.responsive-table td ion-button {
+  margin: 0 2px; /* Margen alrededor de los botones */
+}
+
+/* Estilos para la tabla en pantallas pequeñas (menos de 600px) */
+@media screen and (max-width: 600px) {
+  /* Ocultar los encabezados de la tabla en pantallas pequeñas */
+  .responsive-table thead {
+    display: none;
+  }
+
+  /* Estilos de bloque para la tabla y sus elementos en pantallas pequeñas */
+  .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+    display: block; /* Mostrar como bloques */
+    width: 100%; /* Ancho al 100% del contenedor */
+  }
+
+  /* Estilos para las filas de la tabla en pantallas pequeñas */
+  .responsive-table tr {
+    margin-bottom: 15px; /* Margen inferior de las filas */
+  }
+
+  /* Estilos para las celdas de la tabla en pantallas pequeñas */
+  .responsive-table td {
+    text-align: right; /* Alineación del texto a la derecha */
+    padding-left: 50%; /* Espaciado a la izquierda para el texto */
+    position: relative; /* Posición relativa para el posicionamiento absoluto del pseudo-elemento */
+  }
+
+  /* Estilos para el pseudo-elemento que muestra el nombre del campo en pantallas pequeñas */
+  .responsive-table td::before {
+    content: attr(data-label); /* Contenido del pseudo-elemento basado en el atributo 'data-label' */
+    position: absolute; /* Posición absoluta dentro de la celda */
+    left: 0; /* Alineado a la izquierda de la celda */
+    width: 50%; /* Ancho del pseudo-elemento al 50% de la celda */
+    padding-left: 15px; /* Espaciado a la izquierda del texto */
+    font-weight: bold; /* Negrita para el texto */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+}

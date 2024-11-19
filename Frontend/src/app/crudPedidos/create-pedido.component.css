@@ -1,0 +1,40 @@
+/* Estilos generales para el encabezado y el contenido */
+.header-toolbar {
+    --background: #4a90e2; /* Color de fondo más suave para el encabezado */
+    --color: #ffffff; /* Texto blanco para mejorar el contraste */
+  }
+  
+  ion-title {
+    text-align: center;
+  }
+  
+  .content-area {
+    --background: #ffffff; /* Fondo blanco para el área de contenido */
+    padding: 15px;
+  }
+  
+  /* Estilos para el formulario de creación de pedidos */
+  .pedido-form {
+    max-width: 500px; /* Ancho máximo para el formulario */
+    margin: auto; /* Centrado automático del formulario */
+  }
+  
+  /* Estilos para los botones de acción */
+  .action-buttons {
+    display: flex;
+    flex-direction: column; /* Organiza los botones en una columna */
+    gap: 10px; /* Espacio entre los botones */
+  }
+  
+  /* Estilos para los botones dentro del formulario */
+  ion-button {
+    --border-radius: 8px; /* Bordes redondeados para los botones */
+    margin-top: 10px; /* Espacio superior para separar los botones del resto del formulario */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pedido-form {
+      width: 100%; /* Ancho completo para el formulario en pantallas pequeñas */
+    }
+  }
+  

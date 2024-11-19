@@ -1,0 +1,72 @@
+<!-- Encabezado de la página que contiene la barra de herramientas y el título de la página -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <!-- Título de la página mostrado en la barra de herramientas -->
+    <ion-title>📋Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal de la página -->
+<ion-content>
+  <!-- Contenedor principal con diseño centrado -->
+  <div class="main-container">
+    <!-- Tarjeta contenedora para los elementos de la interfaz de usuario -->
+    <ion-card class="card-container">
+      <!-- Botones de acción con espaciado y diseño atractivo -->
+      <div class="action-buttons">
+        <!-- Botón para crear un nuevo pedido -->
+        <ion-button color="success" routerLink="/createPedido">
+          ➕ Crear Pedido
+        </ion-button>
+        <!-- Botón para regresar al menú -->
+        <ion-button color="secondary" routerLink="/menu">
+          🏠 Menú
+        </ion-button>
+      </div>
+      <!-- Contenido de la tarjeta que incluye una tabla estilizada -->
+      <ion-card-content>
+        <!-- Tabla estilizada para mostrar los datos de los pedidos -->
+        <table class="responsive-table">
+          <!-- Encabezado de la tabla con colores y diseño elegante -->
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Cantidad</th>
+              <th>Fecha</th>
+              <th>IdProducto</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <!-- Cuerpo de la tabla donde se iteran los pedidos usando *ngFor -->
+          <tbody>
+            <tr *ngFor="let pedido of pedidos">
+              <!-- Datos del pedido mostrados en cada celda -->
+              <td>{{pedido.id}}</td>
+              <td>{{pedido.producto?.nombre}}</td>
+              <td>{{pedido.cantidad}}</td>
+              <td>{{pedido.fecha | date:'short'}}</td>
+              <td>{{pedido.producto?.id}}</td>
+              <!-- Celda para las acciones que se pueden realizar con cada pedido -->
+              <td class="action-cell">
+                <!-- Botón para buscar un pedido por su ID -->
+                <ion-button fill="clear" size="small" color="tertiary" routerLink="/findIdPedido/{{pedido.id}}">
+                  🔍 Buscar
+                </ion-button>
+                <!-- Botón para actualizar un pedido -->
+                <ion-button fill="clear" size="small" color="warning" routerLink="/updatePedido/{{pedido.id}}">
+                  ✏️ Editar
+                </ion-button>
+                <!-- Botón para eliminar un pedido -->
+                <ion-button fill="clear" size="small" color="danger" (click)="deleteProducto(pedido.id)">
+                  🗑️ Eliminar
+                </ion-button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

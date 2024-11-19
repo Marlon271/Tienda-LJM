@@ -1,0 +1,49 @@
+/* Contenedor principal de los detalles del producto */
+.product-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* Estilo de la tarjeta */
+  ion-card {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+  }
+  
+  /* Encabezado de la tarjeta */
+  ion-card-header {
+    background-color: var(--ion-color-primary);
+    color: white;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  /* Grupo de botones */
+  .button-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Contenedor de carga */
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Estilo del spinner */
+  ion-spinner {
+    margin-bottom: 1rem;
+    color: var(--ion-color-primary);
+  }
+  

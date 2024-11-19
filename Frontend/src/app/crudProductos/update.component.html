@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Editar Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Editar Producto</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+          <!-- Campo de entrada para el nombre del producto -->
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input
+              type="text"
+              name="nombre"
+              autocomplete="off"
+              required
+              [(ngModel)]="producto.nombre">
+            </ion-input>
+          </ion-item>
+
+          <!-- Campo de entrada para el precio del producto -->
+          <ion-item>
+            <ion-label position="floating">Precio</ion-label>
+            <ion-input
+              type="number"
+              name="precio"
+              autocomplete="off"
+              required
+              [(ngModel)]="producto.precio">
+            </ion-input>
+          </ion-item>
+
+          <!-- Botones de acción -->
+          <div class="button-group">
+            <!-- Botón para guardar los cambios -->
+            <ion-button expand="block" color="success" type="submit" [disabled]="!f.valid">
+              <ion-icon slot="start" name="save"></ion-icon>
+              Guardar
+            </ion-button>
+
+            <!-- Botón para regresar a la lista de productos -->
+            <ion-button expand="block" color="medium" routerLink="/list">
+              <ion-icon slot="start" name="arrow-back"></ion-icon>
+              Regresar
+            </ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

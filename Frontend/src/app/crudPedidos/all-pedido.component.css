@@ -1,0 +1,99 @@
+/* Estilos para el encabezado de la página */
+ion-header {
+  --background: #3880ff; /* Color de fondo azul para el encabezado */
+  --color: #fff;         /* Color de texto blanco para el encabezado */
+}
+
+/* Centra el título en el encabezado */
+ion-title {
+  text-align: center;
+}
+
+/* Estilos para el contenido principal de la página */
+ion-content {
+  --background: #f0f0f0; /* Color de fondo gris claro para el contenido */
+  padding: 15px;        /* Espacio interno alrededor del contenido */
+}
+
+/* Estilos para el botón "Crear Pedido" */
+.crear-receta-btn {
+  margin-bottom: 20px; /* Margen inferior para separar el botón */
+}
+
+/* Estilos generales para la tabla */
+.responsive-table {
+  width: 100%;          /* Ancho completo para la tabla */
+  border-collapse: collapse; /* Elimina espacios entre las celdas */
+  margin-bottom: 20px;  /* Margen inferior para separar la tabla */
+}
+
+/* Estilos para las celdas de encabezado y datos */
+.responsive-table th, .responsive-table td {
+  border: 1px solid #ddd; /* Borde gris claro para las celdas */
+  padding: 8px;         /* Espacio interno dentro de las celdas */
+}
+
+/* Estilos específicos para las celdas de encabezado */
+.responsive-table th {
+  background-color: #3880ff; /* Color de fondo azul para el encabezado */
+  color: white;              /* Color de texto blanco para el encabezado */
+  text-align: left;        /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para filas pares e impares */
+.responsive-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo gris claro para filas pares */
+}
+
+/* Estilos para filas al pasar el mouse por encima */
+.responsive-table tr:hover {
+  background-color: #ddd;  /* Color de fondo gris más oscuro al pasar el mouse */
+}
+
+/* Ajustes adicionales de espaciado para celdas */
+.responsive-table th, .responsive-table td {
+  text-align: left; 
+  padding: 12px;
+}
+
+/* Estilos para botones dentro de celdas */
+.responsive-table td ion-button {
+  margin: 0 2px;     /* Margen pequeño para separar los botones */
+}
+
+/* Estilos para pantallas pequeñas (menos de 600px de ancho) */
+@media screen and (max-width: 600px) {
+
+  /* Oculta el encabezado de la tabla en pantallas pequeñas */
+  .responsive-table thead {
+      display: none; 
+  }
+
+  /* Ajusta el diseño para mostrar los datos en bloques en pantallas pequeñas */
+  .responsive-table, .responsive-table tbody, .responsive-table tr, .responsive-table td {
+      display: block;
+      width: 100%; 
+  }
+
+  /* Ajustes de espaciado para filas y celdas en pantallas pequeñas */
+  .responsive-table tr {
+      margin-bottom: 15px; 
+  }
+
+  .responsive-table td {
+      text-align: right;    /* Alinea el texto a la derecha */
+      padding-left: 50%;   /* Espacio a la izquierda para mostrar la etiqueta */
+      position: relative;  /* Permite posicionar el elemento ::before */
+  }
+
+  /* Crea etiquetas para los datos en pantallas pequeñas */
+  .responsive-table td::before {
+      content: attr(data-label); /* Obtiene el texto de la etiqueta del atributo data-label */
+      position: absolute;       /* Posiciona la etiqueta de forma absoluta */
+      left: 0;                 
+      width: 50%;
+      padding-left: 15px;      /* Espacio interno para la etiqueta */
+      font-weight: bold;     /* Hace que la etiqueta sea más prominente */
+      text-align: left;     /* Alinea el texto de la etiqueta a la izquierda */
+  }
+}

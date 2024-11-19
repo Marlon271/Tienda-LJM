@@ -1,0 +1,37 @@
+<!-- Encabezado de la página con la barra de herramientas y el título 'Editar Producto' -->
+<ion-header>
+  <ion-toolbar>
+    <!-- Título de la página mostrado en la barra de herramientas -->
+    <ion-title>Editar Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido de la tarjeta donde se encuentra el formulario para editar un producto -->
+<ion-card-content>
+  <!-- Formulario que se envía al método 'onUpdate()', no se valida automáticamente -->
+  <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+    <!-- Campo de entrada para el nombre del producto -->
+    <div class="mb-3">
+      <!-- Entrada de texto para la cantidad del pedido, se requiere para enviar el formulario -->
+      <ion-input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" required [(ngModel)]="pedido.cantidad"></ion-input>
+    </div>
+
+    <!-- Campo de entrada para el precio del producto -->
+    <div class="mb-3">
+      <!-- Entrada de texto para la fecha del pedido, se requiere para enviar el formulario -->
+      <ion-input type="text" class="form-control" id="precio" name="precio" placeholder="Precio" autocomplete="off" required [(ngModel)]="pedido.fecha"></ion-input>
+    </div>
+
+    <!-- Botón para guardar los cambios, deshabilitado si el formulario no es válido -->
+    <button class="btn btn-success w-100 mb-1" [disabled]="!f.valid">
+      <!-- Ícono de guardar -->
+      <ion-icon name="save-sharp"></ion-icon>
+    </button>
+
+    <!-- Botón para regresar a la lista de todos los pedidos -->
+    <ion-button color="primary" expand="full" routerLink="/allPedido">
+      <!-- Ícono de regresar -->
+      <ion-icon name="return-down-back-sharp"></ion-icon>
+    </ion-button>
+  </form>
+</ion-card-content>

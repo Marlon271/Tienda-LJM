@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Listado de productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="crud-container">
+    <!-- Botones para crear producto y volver al menú -->
+    <div class="button-group">
+      <ion-button expand="block" color="success" routerLink="/create">
+        <ion-icon name="add-circle" slot="start"></ion-icon>
+        Crear Producto
+      </ion-button>
+      <ion-button expand="block" color="secondary" routerLink="/menu">
+        <ion-icon name="home" slot="start"></ion-icon>
+        Menú
+      </ion-button>
+    </div>
+
+    <!-- Tarjeta para contener la tabla -->
+    <ion-card>
+      <ion-card-content>
+        <!-- Tabla responsiva -->
+        <table class="responsive-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let producto of productos">
+              <td>{{producto.nombre}}</td>
+              <td>{{producto.precio | currency:'COP'}}</td>
+              <td>
+                <ion-button fill="clear" size="small" color="tertiary" routerLink="/findId/{{producto.id}}">
+                  <ion-icon name="search" slot="start"></ion-icon>
+                  Buscar
+                </ion-button>
+                <ion-button fill="clear" size="small" color="warning" routerLink="/update/{{producto.id}}">
+                  <ion-icon name="create" slot="start"></ion-icon>
+                  Actualizar
+                </ion-button>
+                <ion-button fill="clear" size="small" color="danger" (click)="deleteProducto(producto.id)">
+                  <ion-icon name="trash" slot="start"></ion-icon>
+                  Eliminar
+                </ion-button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

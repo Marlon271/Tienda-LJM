@@ -1,0 +1,45 @@
+<!-- Encabezado estilizado con un color destacado y un título centrado -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Tienda LJM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal con diseño dinámico y moderno -->
+<ion-content class="menu-content">
+  <div class="menu-container">
+    <!-- Tarjeta para Productos -->
+    <ion-card class="menu-card">
+      <ion-img src="assets/images/productos.jpg" alt="Imagen de productos"></ion-img>
+      <ion-card-header>
+        <ion-card-title>Productos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" routerLink="/all" color="secondary">
+          Ver Productos
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Tarjeta para Pedidos -->
+    <ion-card class="menu-card">
+      <ion-img src="assets/images/pedidos.jpg" alt="Imagen de pedidos"></ion-img>
+      <ion-card-header>
+        <ion-card-title>Pedidos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block" routerLink="/allPedido" color="tertiary">
+          Ver Pedidos
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Pie de página estilizado con un diseño elegante -->
+  <footer class="footer">
+    <p>Desarrollado por <strong>Marlon,Leonardo Y Julian</strong> © 2024</p>
+  </footer>
+</ion-content>
+
+
+

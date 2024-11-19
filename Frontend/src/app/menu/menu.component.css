@@ -1,0 +1,68 @@
+/* Estilos generales para el encabezado y el contenido */
+ion-header {
+  --background: #3880ff;
+  --color: #ffffff;
+}
+
+ion-title {
+  text-align: center;
+}
+
+/* Estilos para centrar el contenido y darle un diseño moderno */
+.content-center {
+  --background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Usa altura de la ventana gráfica para asegurar cobertura total */
+}
+
+/* Estilos para el contenedor del menú */
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho */
+  gap: 45px; /* Espacio entre tarjetas */
+  width: 100%;
+  max-width: 1500px; /* Aumenta el ancho máximo para permitir tarjetas más grandes */
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Estilos para las tarjetas del menú */
+.menu-card {
+  margin: 10px;
+  flex: 1 1 400px; /* Ajusta la base y permite crecimiento y encogimiento */
+  --background: #ffffff;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ion-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para los botones dentro del menú */
+ion-button {
+  --color: #ffffff;
+  --background: #3880ff;
+  --border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  text-align: center;
+  font-size: 16px;
+  color: #888888;
+  position: fixed; /* Cambia a fijo para mantener en la parte inferior */
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0; /* Agrega relleno para separar del contenido principal */
+  background: #f0f0f0; /* Fondo para destacar sobre el contenido */
+}
+
+
+

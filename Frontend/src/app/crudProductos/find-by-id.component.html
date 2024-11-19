@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Detalle del Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Contenido que se muestra si el producto existe -->
+  <div class="product-details-container" *ngIf="producto">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ producto.nombre }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          <strong>Precio:</strong> ${{ producto.precio }}
+        </p>
+      </ion-card-content>
+    </ion-card>
+    <div class="button-group">
+      <ion-button expand="block" color="secondary" routerLink="/all">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Regresar
+      </ion-button>
+    </div>
+  </div>
+
+  <!-- Contenido alternativo que se muestra mientras se carga el producto -->
+  <div class="loading-container" *ngIf="!producto">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Cargando información del producto...</p>
+  </div>
+</ion-content>

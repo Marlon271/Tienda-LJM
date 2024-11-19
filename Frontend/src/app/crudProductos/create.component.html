@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Nuevo Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="form-container">
+    <!-- Tarjeta para contener el formulario -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Registrar Producto</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Campo para el nombre del producto -->
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input [(ngModel)]="producto.nombre" placeholder="Ingrese el nombre"></ion-input>
+        </ion-item>
+        
+        <!-- Campo para el precio del producto -->
+        <ion-item>
+          <ion-label position="floating">Precio</ion-label>
+          <ion-input type="number" [(ngModel)]="producto.precio" placeholder="Ingrese el precio"></ion-input>
+        </ion-item>
+        
+        <!-- Grupo de botones -->
+        <div class="button-group">
+          <ion-button expand="block" color="success" (click)="saveProducto()">
+            <ion-icon name="checkmark-done" slot="start"></ion-icon>
+            Guardar
+          </ion-button>
+          <ion-button expand="block" color="medium" routerLink="/all">
+            <ion-icon name="arrow-back" slot="start"></ion-icon>
+            Regresar
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+

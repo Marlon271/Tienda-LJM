@@ -1,0 +1,53 @@
+<!-- Encabezado de la página con la barra de herramientas y el título 'Detalle del pedido' -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Detalle del Pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal de la página -->
+<ion-content class="content-area">
+  <!-- Mostrar los detalles si existe un 'pedido' -->
+  <div *ngIf="pedido" class="detail-container">
+    <ion-card>
+      <!-- Encabezado de la tarjeta con el título del pedido -->
+      <ion-card-header class="header-card">
+        <ion-card-title class="ion-text-center">
+          Pedido #{{ pedido.id }}
+        </ion-card-title>
+      </ion-card-header>
+
+      <!-- Contenido de la tarjeta -->
+      <ion-card-content>
+        <!-- Detalles del pedido -->
+        <ion-item lines="none">
+          <ion-label><strong>Cantidad:</strong></ion-label>
+          <ion-note slot="end">{{ pedido.cantidad }}</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label><strong>Fecha:</strong></ion-label>
+          <ion-note slot="end">{{ pedido.fecha }}</ion-note>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label><strong>Producto:</strong></ion-label>
+          <ion-note slot="end">{{ pedido.producto?.nombre }}</ion-note>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Botón para regresar al listado de pedidos -->
+    <div class="button-group">
+      <ion-button expand="block" color="secondary" routerLink="/allPedido">
+        <ion-icon slot="start" name="arrow-back-circle"></ion-icon>
+        Regresar
+      </ion-button>
+    </div>
+  </div>
+
+  <!-- Mensaje de carga si el pedido no está disponible -->
+  <div *ngIf="!pedido" class="loading-container">
+    <ion-spinner name="bubbles"></ion-spinner>
+    <p>Cargando información del pedido...</p>
+  </div>
+</ion-content>
+

@@ -1,0 +1,81 @@
+<!-- Encabezado de la página con un estilo moderno y un título centrado -->
+<ion-header>
+  <ion-toolbar class="header-toolbar">
+    <ion-title class="ion-text-center">Nuevo Pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contenido principal con un diseño estilizado -->
+<ion-content class="content-area">
+  <div class="form-container">
+    <!-- Tarjeta con sombra y bordes redondeados para darle un diseño elegante -->
+    <ion-card>
+      <ion-card-header class="header-card">
+        <ion-card-title class="ion-text-center">Registrar Pedido</ion-card-title>
+      </ion-card-header>
+
+      <!-- Formulario para la creación de un nuevo pedido -->
+      <ion-card-content>
+        <form class="pedido-form">
+          <!-- Campo para la cantidad -->
+          <ion-item lines="full" class="form-item">
+            <ion-label position="floating">Cantidad</ion-label>
+            <ion-input
+              type="number"
+              [(ngModel)]="pedido.cantidad"
+              name="cantidad"
+              required
+              clear-input
+            ></ion-input>
+          </ion-item>
+
+          <!-- Campo para la fecha -->
+          <ion-item lines="full" class="form-item">
+            <ion-label position="floating">Fecha</ion-label>
+            <ion-datetime
+              [(ngModel)]="pedido.fecha"
+              name="fecha"
+              display-format="DD/MM/YYYY"
+              min="2023-01-01"
+              max="2030-12-31"
+            ></ion-datetime>
+          </ion-item>
+
+          <!-- Selector para el producto -->
+          <ion-item lines="full" class="form-item">
+            <ion-label>Producto</ion-label>
+            <ion-select
+              [(ngModel)]="pedido.producto"
+              name="producto"
+              placeholder="Selecciona un producto"
+              interface="action-sheet"
+              required
+            >
+              <ion-select-option
+                *ngFor="let producto of productos"
+                [value]="producto"
+              >
+                {{ producto.nombre }}
+              </ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <!-- Botones de acción -->
+          <div class="button-group">
+            <ion-button expand="block" color="primary" (click)="savePedido()">
+              <ion-icon slot="start" name="checkmark-circle"></ion-icon>
+              Guardar
+            </ion-button>
+            <ion-button expand="block" color="light" routerLink="/allPedido">
+              <ion-icon slot="start" name="arrow-back"></ion-icon>
+              Regresar
+            </ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+
