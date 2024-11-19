@@ -137,20 +137,18 @@ git push
 ### Imágenes
 
 
-![Evidencia 1](evidencias/1.png)
-![Evidencia 2](evidencias/2.png)
-![Evidencia 3](evidencias/3.png)
-![Evidencia 4](evidencias/4.png)
-![Evidencia 5](evidencias/5.png)
-![Evidencia 6](evidencias/6.png)
-![Evidencia 7](evidencias/7.png)
-![Evidencia 8](evidencias/8.png)
-
-### Imágenes Apk
-![apk](evidencias/9.png)
-![apk](evidencias/10.png)
-![apk](evidencias/11.png)
-![apk](evidencias/12.png)
+![paso 1](Evidencia/1.png)
+![paso 2](Evidencia/2.png)
+![paso 3](Evidencia/3.png)
+![paso 4](Evidencia/4.png)
+![paso 5](Evidencia/5.png)
+![paso 6](Evidencia/6.png)
+![paso 7](Evidencia/7.png)
+![paso 7](Evidencia/8.png)
+![paso 7](Evidencia/9.png)
+![paso 7](Evidencia/10.png)
+![paso 7](Evidencia/11.png)
+![paso 7](Evidencia/12.png)
 ```
 ---
 
