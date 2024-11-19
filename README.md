@@ -155,8 +155,11 @@ git push
 ![paso 8](Evidencia/8.png)
 ### Imágenes APK
 ![paso 9](Evidencia/9.png)
+
 ![paso 10](Evidencia/10.png)
+
 ![paso 11](Evidencia/11.png)
+
 ![paso 12](Evidencia/12.png)
 
 ## Descarga de Recursos
