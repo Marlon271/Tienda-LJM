@@ -18,6 +18,7 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 - **Backend:** Spring Boot con Java.  
 - **Frontend:** Ionic con Angular.  
 - **Base de Datos:** MySQL.  
+- **Aplicación Móvil:** Generada con Ionic para dispositivos Android.  
 
 ---
 
@@ -34,6 +35,14 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 - **Implementación de rutas API:** Proporciona endpoints para la interacción entre el frontend y la base de datos.
 
 ---
+
+## Asignación de Roles
+
+| **Integrante**                  | **Función**                                |
+|---------------------------------|--------------------------------------------|
+| Romero Trujillo Marlos David    | Desarrollo de backend y base de datos.     |
+| Trujillo Bonilla Julián Alberto | Diseño y desarrollo del frontend.          |
+| Vargas Herrera José Leonardo    | Integración de API y manejo de vistas.     |
 
 ---
 
@@ -119,11 +128,17 @@ CREATE TABLE pedidos (
 
 ## Descarga de Recursos
 
-- **Aplicación móvil:** [Descargar APK](sandbox:/mnt/data/app-debug.apk)  
-- **Presentación PowerPoint:** [Descargar presentación](sandbox:/mnt/data/proyecto.pptx)
+- **Aplicación móvil:**  
+  Generada con **Ionic** para dispositivos Android. Puedes descargarla y abrirla desde tu dispositivo móvil:  
+  [Descargar APK]!(app-debug.apk).  
+
+  > Si estás navegando desde tu dispositivo móvil, haz clic en el enlace para iniciar la descarga y luego abre el archivo para instalar la aplicación.  
+
+- **Presentación PowerPoint:**  
+  [Descargar presentación](proyecto.pptx).  
 
 ---
 
 ## Resultado
 
-La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria.
+La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria. La aplicación móvil permite una gestión cómoda desde cualquier dispositivo Android.
