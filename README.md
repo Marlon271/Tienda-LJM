@@ -137,22 +137,21 @@ git push
 ### Imágenes
 
 
-![Evidencia 1](./evidencias/1.png)
-![Evidencia 2](./evidencias/2.png)
-![Evidencia 3](./evidencias/3.png)
-![Evidencia 4](./evidencias/4.png)
-![Evidencia 5](./evidencias/5.png)
-![Evidencia 6](./evidencias/6.png)
-![Evidencia 7](./evidencias/7.png)
-![Evidencia 8](./evidencias/8.png)
+![Evidencia 1](evidencias/1.png)
+![Evidencia 2](evidencias/2.png)
+![Evidencia 3](evidencias/3.png)
+![Evidencia 4](evidencias/4.png)
+![Evidencia 5](evidencias/5.png)
+![Evidencia 6](evidencias/6.png)
+![Evidencia 7](evidencias/7.png)
+![Evidencia 8](evidencias/8.png)
 
-
-![apk](./evidencias/9.png)
-![apk](./evidencias/10.png)
-![apk](./evidencias/11.png)
-![apk](./evidencias/12.png)
+### Imágenes Apk
+![apk](evidencias/9.png)
+![apk](evidencias/10.png)
+![apk](evidencias/11.png)
+![apk](evidencias/12.png)
 ```
-
 ---
 
 ## Descarga de Recursos
@@ -163,11 +162,8 @@ git push
 
   > Si estás navegando desde tu dispositivo móvil, haz clic en el enlace para iniciar la descarga y luego abre el archivo para instalar la aplicación.  
 
+- **Presentación PowerPoint:**  
+  [Descargar presentación](proyecto.pptx).  
+
 ---
-
-## Resultado
-
-La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria. La aplicación móvil permite una gestión cómoda desde cualquier dispositivo Android.
-```
-
 
