@@ -8,6 +8,14 @@
 
 ---
 
+## Enlace del Video Explicativo del nuevo componente de Marlon David Romero Trujillo
+
+Puedes ver el video explicativo sobre cómo se creó e integró cada componente en el siguiente enlace:
+- **[Enlace al Video](https://drive.google.com/file/d/1qyh7fHij1Y3HB8aUI3auktMp3yIPA9Uj/view?usp=sharing)**
+
+---
+---
+
 ## Descripción General del Proyecto
 
 **Objetivo:**  
@@ -144,13 +152,12 @@ git push
 ![paso 5](Evidencia/5.png)
 ![paso 6](Evidencia/6.png)
 ![paso 7](Evidencia/7.png)
-![paso 7](Evidencia/8.png)
-![paso 7](Evidencia/9.png)
-![paso 7](Evidencia/10.png)
-![paso 7](Evidencia/11.png)
-![paso 7](Evidencia/12.png)
-```
----
+![paso 8](Evidencia/8.png)
+### Imágenes APK
+![paso 9](Evidencia/9.png)
+![paso 10](Evidencia/10.png)
+![paso 11](Evidencia/11.png)
+![paso 12](Evidencia/12.png)
 
 ## Descarga de Recursos
 
@@ -160,8 +167,7 @@ git push
 
   > Si estás navegando desde tu dispositivo móvil, haz clic en el enlace para iniciar la descarga y luego abre el archivo para instalar la aplicación.  
 
-- **Presentación PowerPoint:**  
-  [Descargar presentación](proyecto.pptx).  
+## Resultado
+La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria. La aplicación móvil permite una gestión cómoda desde cualquier dispositivo Android.
 
 ---
-
