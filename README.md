@@ -1,4 +1,3 @@
-
 # Tienda LJM
 
 **Presentado por:**  
@@ -6,6 +5,31 @@
 - Trujillo Bonilla Julián Alberto  
 - Vargas Herrera José Leonardo  
 
+---
+
+## Tabla de Contenido
+1. [Enlace del Video Explicativo](#enlace-del-video-explicativo-del-nuevo-componente-de-marlon-david-romero-trujillo)
+2. [Descripción General del Proyecto](#descripción-general-del-proyecto)
+3. [Funcionalidades Principales](#funcionalidades-principales)
+   - [Frontend](#frontend)
+   - [Backend](#backend)
+4. [Modelo Entidad Relación (MER)](#modelo-entidad-relación-mer)
+5. [Requisitos Funcionales y No Funcionales](#requisitos-funcionales-y-no-funcionales)
+   - [Requisitos Funcionales](#requisitos-funcionales)
+   - [Requisitos No Funcionales](#requisitos-no-funcionales)
+6. [Configuración de la Base de Datos](#configuración-de-la-base-de-datos)
+7. [Pasos para Despliegue](#pasos-para-despliegue)
+   - [Clonación del proyecto](#clonación-del-proyecto)
+   - [Sincronización de cambios](#sincronización-de-cambios)
+   - [Instalación y despliegue del Frontend](#instalación-y-despliegue-del-frontend)
+   - [Instalación y despliegue del Backend](#instalación-y-despliegue-del-backend)
+   - [Generación del APK](#generación-del-apk)
+8. [Evidencias del Proyecto](#evidencias-del-proyecto)
+   - [Imágenes](#imágenes)
+   - [Imágenes APK](#imágenes-apk)
+9. [Descarga de Recursos](#descarga-de-recursos)
+10. [Resultado](#resultado)
+---
 ---
 
 ## Enlace del Video Explicativo del nuevo componente de Marlon David Romero Trujillo
