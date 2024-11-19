@@ -1,4 +1,3 @@
-### Documentación del Proyecto
 
 # Tienda LJM
 
@@ -36,12 +35,10 @@ Facilitar la compra de ropa masculina de alta calidad a través de una plataform
 
 ---
 
----
-
 ## Modelo Entidad Relación (MER)
 
 El diseño MER incluye las tablas necesarias para la gestión de productos y pedidos, adaptado a las necesidades específicas de la tienda LJM.
-
+[Descargar presentación](proyecto.pptx)
 ---
 
 ## Requisitos Funcionales y No Funcionales
@@ -70,50 +67,90 @@ El diseño MER incluye las tablas necesarias para la gestión de productos y ped
 
 **Pasos para la configuración:**
 1. Instalar **MySQL** en el sistema (puedes usar **XAMPP** o **MySQL Workbench**).  
-2. Importar el esquema de la base de datos en MySQL Workbench.  
-3. Verificar que las tablas estén correctamente implementadas ejecutando el script proporcionado.
-
-**Estructura de las Tablas:**
-
-### Tabla de Productos
-| **Campo**   | **Tipo**  | **Clave** | **Descripción**             |
-|-------------|-----------|-----------|-----------------------------|
-| id          | INT       | PK        | Identificador único del producto. |
-| nombre      | VARCHAR   |           | Nombre del producto.        |
-| precio      | DECIMAL   |           | Precio del producto.        |
-| categoria   | VARCHAR   |           | Categoría del producto.     |
-
-### Tabla de Pedidos
-| **Campo**         | **Tipo**     | **Clave** | **Descripción**              |
-|--------------------|--------------|-----------|------------------------------|
-| id                | INT          | PK        | Identificador único del pedido. |
-| usuarioId         | INT          | FK        | Identificador del usuario que realizó el pedido. |
-| total             | DECIMAL      |           | Monto total del pedido.      |
-| fecha             | TIMESTAMP    |           | Fecha en la que se realizó el pedido. |
 
 ---
 
-## Script de Base de Datos
+## Pasos para Despliegue
 
-```sql
-CREATE DATABASE TiendaLJM;
+### Clonación del proyecto
+```bash
+git clone <URL-del-repositorio>
+```
 
-USE TiendaLJM;
+### Sincronización de cambios
+```bash
+git pull
+```
 
-CREATE TABLE productos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    precio DECIMAL(10, 2) NOT NULL,
-    categoria VARCHAR(50) NOT NULL
-);
+### Modificación o publicación
+```bash
+git pull
+git add -A
+git commit -m "Mensaje que informe el cambio"
+git push
+```
 
-CREATE TABLE pedidos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    usuarioId INT NOT NULL,
-    total DECIMAL(10, 2) NOT NULL,
-    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (usuarioId) REFERENCES usuarios(id)
-);
+### Instalación y despliegue del Frontend
+1. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+2. Iniciar servidor de desarrollo:
+   ```bash
+   ng serve
+   ```
+
+### Instalación y despliegue del Backend
+1. Configurar conexión con la base de datos en `application.properties`.  
+2. Iniciar el servidor backend con Spring Boot por debug.  
+
+### Generación del APK
+1. Instalar Capacitor Android:
+   ```bash
+   npm install @capacitor/android
+   ```
+2. Agregar plataforma Android:
+   ```bash
+   npx cap add android
+   ```
+3. Compilar el proyecto:
+   ```bash
+   ionic build
+   ```
+4. Verificar configuración de Capacitor:
+   ```bash
+   npx cap ls
+   ```
+5. Copiar el proyecto a Android:
+   ```bash
+   npx cap copy android
+   ```
+6. Abrir en Android Studio:
+   ```bash
+   npx cap open android
+   ```
+
+---
+
+## Evidencias del Proyecto
+
+### Imágenes
+
+
+![Evidencia 1](./evidencias/1.png)
+![Evidencia 2](./evidencias/2.png)
+![Evidencia 3](./evidencias/3.png)
+![Evidencia 4](./evidencias/4.png)
+![Evidencia 5](./evidencias/5.png)
+![Evidencia 6](./evidencias/6.png)
+![Evidencia 7](./evidencias/7.png)
+![Evidencia 8](./evidencias/8.png)
+
+
+![apk](./evidencias/9.png)
+![apk](./evidencias/10.png)
+![apk](./evidencias/11.png)
+![apk](./evidencias/12.png)
 ```
 
 ---
@@ -126,11 +163,11 @@ CREATE TABLE pedidos (
 
   > Si estás navegando desde tu dispositivo móvil, haz clic en el enlace para iniciar la descarga y luego abre el archivo para instalar la aplicación.  
 
-- **Presentación PowerPoint:**  
-  [Descargar presentación](proyecto.pptx).  
-
 ---
 
 ## Resultado
 
 La Tienda LJM es una plataforma eficiente para la gestión de productos y pedidos, adaptada a las necesidades del comercio en Neiva. La integración entre el frontend y el backend, junto con el uso de MySQL como base de datos, garantiza un rendimiento óptimo y una experiencia de usuario satisfactoria. La aplicación móvil permite una gestión cómoda desde cualquier dispositivo Android.
+```
+
+
