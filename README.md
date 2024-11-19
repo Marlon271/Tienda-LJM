@@ -8,7 +8,7 @@
 ---
 
 ## Tabla de Contenido
-1. [Enlace del Video Explicativo](#enlace-del-video-explicativo-del-nuevo-componente-de-marlon-david-romero-trujillo)
+1. [Enlace del Video Explicativo por Marlon](#enlace-del-video-explicativo-del-nuevo-componente-de-marlon-david-romero-trujillo)
 2. [Descripción General del Proyecto](#descripción-general-del-proyecto)
 3. [Funcionalidades Principales](#funcionalidades-principales)
    - [Frontend](#frontend)
