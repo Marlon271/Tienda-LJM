@@ -1,6 +1,6 @@
 export const environment = {
   production: true, // La propiedad 'production' se establece en 'true' para entornos de producción
-  apiResrURL: 'https://tu-api-en-produccion.com', // URL base para las llamadas a la API REST en producción
+  apiResrURL: 'https://vts118xs-8080.use.devtunnels.ms/', // URL base para las llamadas a la API REST en producción
 };
 
 
