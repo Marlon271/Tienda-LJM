@@ -26,7 +26,6 @@
    - [Instalación y despliegue del Backend](#instalación-y-despliegue-del-backend)
    - [Generación del APK](#generación-del-apk)
    - [Inicio de Sesión en la Aplicación](#Inicio-de-Sesión-en-la-Aplicación)
-   
 8. [Evidencias del Proyecto](#evidencias-del-proyecto)
    - [Imágenes](#imágenes)
    - [Imágenes APK](#imágenes-apk)
